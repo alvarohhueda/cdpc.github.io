@@ -1,0 +1,5 @@
+-Validadores el index (corregir)
+-Documentación técnica:
+·Pantallazo Hosting y Update del Hosting
+-Terminar Acerca De (corregir)
+

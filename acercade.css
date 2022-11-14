@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;  /*Estilo del Acerca De*/
+    font-family: 'poppins', sans-serif;}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.466), black ), url(logo22.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center; /*Style dentro del index para el formulario*/
+}
+
+.info{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 300px; /*Información*/
+}
+
+p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px; /*Párrafo*/
+    padding: 10px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600; /*Texto h1*/
+    color: #fff;
+}
+
+h2{
+    color:white; /*Texto h2*/
+    margin-right: 65%;
+    margin-top: 15%;
+}
+
+h3{
+    color:white; /*Texto h3*/
+    margin-left: 65%;
+}
+
+h5{
+    color:whitesmoke; /*Texto h3*/
+    font-size: 80%;
+}
+
+p{
+    margin-left: 65%;
+
+}
+
+.acerca-de{
+    flex-basis: 20%;
+    border-radius: 10px;
+    position: relative; /*Propiedades Acerca De*/
+    overflow: hidden;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1px; /*Contenido*/
+}
+
+table{
+    color:whitesmoke;
+    text-align: center; 
+    margin-right: 0 auto; /*Tabla*/
+    display: table;
+}
+
+

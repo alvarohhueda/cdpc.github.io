@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /*Fuente principal*/
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.466), black ), url(background.jpg);
+    background-size: cover;
+    background-position: center; /*Fondo editado de la página*/
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Posición contenido*/ 
+
+}
+
+.logo{
+    cursor: pointer;
+    width: 200px; /*Posición y tamaño del logo*/
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; /*Posición menú*/
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Fuente del texto del menú*/
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:  lightslategrey;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s; /*Barra inferior desplazable 1*/
+}
+
+.navbar ul li:hover::after{
+    width: 100%; /*Barra inferior desplazable 2*/
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;  /*Contenido posicionado*/
+}
+
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px; /*Tamaño del contenido*/
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /*Fuente del contenido*/
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid lightslategrey;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /*Propiedades del botón*/
+}
+
+span{
+    background:  lightslategrey;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s; /*Barra inferior del botón*/
+}
+
+button:hover span{
+    width: 100%; /*Botón desplazable 1*/
+}
+
+button:hover{
+    border: none; /*Botón desplazable 2*/
+}
+
+.servicios{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; /*Servicios*/
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600; /*Texto h1*/
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300; /*Párrafo*/
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; /*Columna*/
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #d4d1d1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /*Propiedades de la columna*/
+}
+
+h2{
+    font-size: 100%;
+    color: #d4d1d1; /*Texto h2*/
+}
+
+@media(max-width: 100px){
+    .row{
+        flex-direction: column; /*Adaptación otros dispositivos*/
+    }
+}
+
+.info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; /*Información*/
+}

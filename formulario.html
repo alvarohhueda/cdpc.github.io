@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" type="image/x-icon" href="logo.png"> <!-- Icono -->
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style></style>
+</head>
+<body>
+    <section class="formu">
+        <header class="hero">
+            <div>
+                <img src="logo.png" alt="Logo"> <!-- Logo -->
+            </div>
+            <form> <!-- Formulario -->
+                <div class="input-group"> 
+                    <input type="text" id="name"required>
+                    <label for="name"><i class="fas fa-user"></i> Nombre y Apellidos</label> <!-- Texto Nombre y Apellidos -->
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number"required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> Teléfono</label> <!-- Texto Teléfono -->
+                </div>
+                <div class="input-group">
+                    <input type="text" id="numbers"required>
+                    <label for="numbers"><i class="fas fa-address-card"></i> DNI</label> <!-- Texto DNI -->
+                </div>
+                <div class="input-group">
+                    <input type="text" id="email"required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label><!-- Texto Correo Electrónico -->
+                </div>
+                <footer class="input-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fas fa-comments"></i> Tu opinión</label> <!-- Texto Tu Opinión -->
+                </footer>
+                <button type="submit"> ENVIAR</button> <!-- Botón para enviar -->
+            </form>
+        </header>
+    </section> 
+</body>
+</html>
